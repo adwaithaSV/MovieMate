@@ -1,0 +1,46 @@
+/* frontend/src/styles/NavBar.css */
+
+.navbar {
+  background-color: #333; /* Dark background for the nav bar */
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  gap: 30px; /* Space between navigation items */
+}
+
+.nav-item {
+  /* No specific styling needed for list items themselves beyond what's inherited */
+}
+
+.nav-link, .nav-button {
+  background-color: #FFD700; /* Yellow theme color */
+  color: #333; /* Dark text on yellow background */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline for links */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block; /* Ensure padding and dimensions work consistently */
+}
+
+.nav-link:hover, .nav-button:hover {
+  background-color: #e0c200; /* Slightly darker yellow on hover */
+  color: #1a1a1a; /* Darker text on hover */
+}
+
+.nav-button {
+  /* Specific styles for the button if needed, e.g., to override default button styles */
+  appearance: none; /* Remove default button styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
