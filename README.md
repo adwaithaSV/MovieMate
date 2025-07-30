@@ -49,7 +49,7 @@ Yellow Theme: Key UI elements and headings are styled with a vibrant yellow them
 🚀 Getting Started
 Follow these detailed instructions to get a copy of the MovieMate project up and running on your local machine for development and testing purposes.
 
-Prerequisites
+# Prerequisites
 Before you begin, ensure you have the following installed on your system:
 
 Python 3.8 or higher:
@@ -66,9 +66,8 @@ npm is installed automatically with Node.js.
 
 Verify installation: node --version and npm --version
 
-(Optional) Yarn: If you prefer Yarn over npm: npm install -g yarn then yarn --version
 
-1. Backend Setup (Flask & SQLite)
+# 1. Backend Setup (Flask & SQLite)
 The backend handles all data storage, user authentication, and API logic.
 
 Navigate to the backend directory:
@@ -101,10 +100,10 @@ You should see (venv) at the beginning of your terminal prompt, indicating the e
 Install Backend Dependencies:
 Install all required Python packages. If you have a requirements.txt file, use that. Otherwise, install them manually.
 
-# If you have a requirements.txt file (recommended):
+If you have a requirements.txt file (recommended):
 pip install -r requirements.txt
 
-# If you don't have requirements.txt, install manually:
+If you don't have requirements.txt, install manually:
 pip install Flask Flask-SQLAlchemy Werkzeug Flask-CORS PyJWT
 
 Initialize the Database:
@@ -122,7 +121,7 @@ flask --app app run
 
 The backend will typically run on http://127.0.0.1:5000. Keep this terminal window open and running.
 
-2. Frontend Setup (React)
+# 2. Frontend Setup (React)
 The frontend provides the user interface and communicates with the backend API.
 
 Open a New Terminal/Command Prompt Window:
