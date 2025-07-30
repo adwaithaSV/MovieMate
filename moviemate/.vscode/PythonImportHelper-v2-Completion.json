@@ -1,0 +1,392 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "check_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "check_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "check_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "init_db",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Movie",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Movie",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "routes",
+        "description": "routes",
+        "isExtraImport": true,
+        "detail": "routes",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "wraps",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app) # Enable CORS for React frontend\n# Initialize the database with the app instance.\n# This will set up the database URI and create tables if they don't exist.\ninit_db(app) # <--- init_db is called AFTER models are imported\n# Import routes after the app and db are initialized, as routes will use db and models.\nfrom routes import *\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "init_db",
+        "kind": 2,
+        "importPath": "backend.database",
+        "description": "backend.database",
+        "peekOfCode": "def init_db(app):\n    \"\"\"\n    Initializes the SQLAlchemy database with the Flask app and creates tables.\n    This function should be called once with the Flask application instance.\n    \"\"\"\n    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///moviemate.db'\n    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\n    db.init_app(app)\n    # Push an application context to ensure db.create_all() works correctly\n    # when run directly (e.g., via `flask run`).",
+        "detail": "backend.database",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "backend.database",
+        "description": "backend.database",
+        "peekOfCode": "db = SQLAlchemy()\ndef init_db(app):\n    \"\"\"\n    Initializes the SQLAlchemy database with the Flask app and creates tables.\n    This function should be called once with the Flask application instance.\n    \"\"\"\n    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///moviemate.db'\n    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\n    db.init_app(app)\n    # Push an application context to ensure db.create_all() works correctly",
+        "detail": "backend.database",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class User(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(80), nullable=False)\n    email = db.Column(db.String(120), unique=True, nullable=False)\n    password_hash = db.Column(db.String(128), nullable=False)\n    movies = db.relationship('Movie', backref='user', lazy=True)\n    def set_password(self, password):\n        self.password_hash = generate_password_hash(password)\n    def check_password(self, password):\n        return check_password_hash(self.password_hash, password)",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "Movie",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class Movie(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    title = db.Column(db.String(200), nullable=False)\n    genre = db.Column(db.String(100))\n    director = db.Column(db.String(100)) # <--- ADD THIS LINE\n    platform = db.Column(db.String(100))\n    content_type = db.Column(db.String(50)) # 'movie' or 'tv_show'\n    episodes_watched = db.Column(db.Integer, default=0) # For TV shows\n    status = db.Column(db.String(50)) # 'wishlist', 'watching', 'completed'\n    rating = db.Column(db.Integer) # 1-10, nullable",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "token_required",
+        "kind": 2,
+        "importPath": "backend.routes",
+        "description": "backend.routes",
+        "peekOfCode": "def token_required(f):\n    @wraps(f)\n    def decorated(*args, **kwargs):\n        token = None\n        if 'x-access-token' in request.headers:\n            token = request.headers['x-access-token']\n        if not token:\n            return jsonify({'message': 'Token is missing!'}), 401\n        try:\n            data = jwt.decode(token, app.config['SECRET_KEY'], algorithms=[\"HS256\"])",
+        "detail": "backend.routes",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "backend.routes",
+        "description": "backend.routes",
+        "peekOfCode": "def signup():\n    data = request.get_json()\n    name = data.get('name')\n    email = data.get('email')\n    password = data.get('password')\n    if not name or not email or not password:\n        return jsonify({'message': 'Missing name, email, or password'}), 400\n    if User.query.filter_by(email=email).first():\n        return jsonify({'message': 'User with this email already exists'}), 409\n    new_user = User(name=name, email=email)",
+        "detail": "backend.routes",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "backend.routes",
+        "description": "backend.routes",
+        "peekOfCode": "def login():\n    data = request.get_json()\n    email = data.get('email')\n    password = data.get('password')\n    if not email or not password:\n        return jsonify({'message': 'Missing email or password'}), 400\n    user = User.query.filter_by(email=email).first()\n    if not user or not user.check_password(password):\n        return jsonify({'message': 'Invalid credentials'}), 401\n    token = jwt.encode({",
+        "detail": "backend.routes",
+        "documentation": {}
+    },
+    {
+        "label": "add_movie",
+        "kind": 2,
+        "importPath": "backend.routes",
+        "description": "backend.routes",
+        "peekOfCode": "def add_movie(current_user):\n    data = request.get_json()\n    new_movie = Movie(\n        title=data.get('title'),\n        genre=data.get('genre'),\n        platform=data.get('platform'),\n        content_type=data.get('content_type'),\n        episodes_watched=data.get('episodes_watched', 0) if data.get('content_type') == 'tv_show' else 0,\n        status=data.get('status'),\n        rating=data.get('rating') if data.get('status') == 'completed' else None,",
+        "detail": "backend.routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_movies",
+        "kind": 2,
+        "importPath": "backend.routes",
+        "description": "backend.routes",
+        "peekOfCode": "def get_movies(current_user):\n    movies = Movie.query.filter_by(user_id=current_user.id).all()\n    return jsonify([movie.to_dict() for movie in movies]), 200\n@app.route('/api/movies/<int:movie_id>', methods=['PUT'])\n@token_required\ndef update_movie(current_user, movie_id):\n    movie = Movie.query.filter_by(id=movie_id, user_id=current_user.id).first()\n    if not movie:\n        return jsonify({'message': 'Movie not found or unauthorized'}), 404\n    data = request.get_json()",
+        "detail": "backend.routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_movie",
+        "kind": 2,
+        "importPath": "backend.routes",
+        "description": "backend.routes",
+        "peekOfCode": "def update_movie(current_user, movie_id):\n    movie = Movie.query.filter_by(id=movie_id, user_id=current_user.id).first()\n    if not movie:\n        return jsonify({'message': 'Movie not found or unauthorized'}), 404\n    data = request.get_json()\n    movie.title = data.get('title', movie.title)\n    movie.genre = data.get('genre', movie.genre)\n    movie.platform = data.get('platform', movie.platform)\n    movie.content_type = data.get('content_type', movie.content_type)\n    movie.episodes_watched = data.get('episodes_watched', movie.episodes_watched)",
+        "detail": "backend.routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_movie",
+        "kind": 2,
+        "importPath": "backend.routes",
+        "description": "backend.routes",
+        "peekOfCode": "def delete_movie(current_user, movie_id):\n    movie = Movie.query.filter_by(id=movie_id, user_id=current_user.id).first()\n    if not movie:\n        return jsonify({'message': 'Movie not found or unauthorized'}), 404\n    db.session.delete(movie)\n    db.session.commit()\n    return jsonify({'message': 'Movie deleted successfully!'}), 200",
+        "detail": "backend.routes",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SECRET_KEY']",
+        "kind": 5,
+        "importPath": "backend.routes",
+        "description": "backend.routes",
+        "peekOfCode": "app.config['SECRET_KEY'] = 'your_super_secret_key_for_jwt'\n# JWT decorator\ndef token_required(f):\n    @wraps(f)\n    def decorated(*args, **kwargs):\n        token = None\n        if 'x-access-token' in request.headers:\n            token = request.headers['x-access-token']\n        if not token:\n            return jsonify({'message': 'Token is missing!'}), 401",
+        "detail": "backend.routes",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    }
+]
