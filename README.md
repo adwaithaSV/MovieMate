@@ -136,15 +136,15 @@ Install Frontend Dependencies:
 Install all required Node.js packages for the React application.
 
 npm install
-# or if you use Yarn:
-# yarn install
+ or if you use Yarn:
+ yarn install
 
 Run the React Development Server:
 Start the React application development server:
 
 npm start
-# or if you use Yarn:
-# yarn start
+ or if you use Yarn:
+yarn start
 
 This will compile the React application and usually open it automatically in your default web browser at http://localhost:3000.
 
