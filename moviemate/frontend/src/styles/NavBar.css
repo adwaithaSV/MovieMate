@@ -1,46 +1,63 @@
 /* frontend/src/styles/NavBar.css */
 
 .navbar {
-  background-color: #333; /* Dark background for the nav bar */
-  padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #424242;
+  padding: 15px 20px;
+  width: 74%; 
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .nav-list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center; /* Center the navigation items */
-  gap: 30px; /* Space between navigation items */
-}
-
-.nav-item {
-  /* No specific styling needed for list items themselves beyond what's inherited */
+  gap: 20px; 
+  justify-content: center; 
 }
 
 .nav-link, .nav-button {
-  background-color: #FFD700; /* Yellow theme color */
-  color: #333; /* Dark text on yellow background */
-  border: none;
+  background-color: #FFD700;
+  color: #333;
+  text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.1em;
   font-weight: bold;
-  text-decoration: none; /* Remove underline for links */
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: inline-block; /* Ensure padding and dimensions work consistently */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
 }
 
 .nav-link:hover, .nav-button:hover {
-  background-color: #e0c200; /* Slightly darker yellow on hover */
-  color: #1a1a1a; /* Darker text on hover */
+  background-color: #e0c200;
+  transform: translateY(-2px);
 }
 
-.nav-button {
-  /* Specific styles for the button if needed, e.g., to override default button styles */
-  appearance: none; /* Remove default button styling */
-  -webkit-appearance: none;
-  -moz-appearance: none;
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav-link, .nav-button {
+    width: 80%;
+    text-align: center;
+  }
 }
