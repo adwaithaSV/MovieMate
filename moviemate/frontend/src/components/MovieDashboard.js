@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavBar from './NavBar';
 import MovieList from './MovieList';
@@ -7,28 +7,49 @@ import '../styles/MovieDashboard.css';
 
 function MovieDashboard({ username, onLogout }) {
   const [movies, setMovies] = useState([]);
+  const [modalMessage, setModalMessage] = useState(null); 
   const navigate = useNavigate();
+
+  const handleShowModal = (msg) => {
+    setModalMessage(msg);
+  };
+
+  const handleCloseModal = () => {
+    setModalMessage(null);
+  };
+
+  const fetchMovies = useCallback(async () => {
+    try {
+      const data = await getMovies();
+      if (Array.isArray(data)) {
+        setMovies(data);
+      } else {
+        console.error("Expected an array of movies, but got:", data);
+        setMovies([]);
+        handleShowModal('Failed to load movies. Please try again.'); 
+      }
+    } catch (error) {
+      console.error("Error fetching movies:", error);
+      handleShowModal('An error occurred while fetching movies. Please try again.');
+    }
+  }, [getMovies, setMovies, handleShowModal]); // Added handleShowModal to dependencies
 
   useEffect(() => {
     fetchMovies();
-  }, []);
-
-  const fetchMovies = async () => {
-    const data = await getMovies();
-    if (Array.isArray(data)) { // Ensure data is an array
-      setMovies(data);
-    } else {
-      console.error("Expected an array of movies, but got:", data);
-      setMovies([]); // Set to empty array to prevent errors
-    }
-  };
+  }, [fetchMovies]);
 
   const handleDelete = async (movieId) => {
-    const response = await deleteMovie(movieId);
-    if (response.message === 'Movie deleted successfully!') {
-      fetchMovies(); // Refresh list
-    } else {
-      alert('Failed to delete movie');
+    try {
+      const response = await deleteMovie(movieId);
+      if (response.message === 'Movie deleted successfully!') {
+        handleShowModal(response.message); 
+        fetchMovies(); 
+      } else {
+        handleShowModal(response.message || 'Failed to delete movie.');
+      }
+    } catch (error) {
+      console.error("Error deleting movie:", error);
+      handleShowModal('An error occurred while deleting the movie. Please try again.'); 
     }
   };
 
@@ -44,6 +65,18 @@ function MovieDashboard({ username, onLogout }) {
       <div className="main-content">
         <MovieList movies={movies} onDelete={handleDelete} onEdit={handleEdit} />
       </div>
+
+      {/* Custom Modal */}
+      {modalMessage && (
+        <div className="dashboard-modal-overlay">
+          <div className="dashboard-modal-content">
+            <p className="dashboard-modal-message">{modalMessage}</p>
+            <button className="dashboard-modal-close-button" onClick={handleCloseModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
