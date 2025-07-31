@@ -1,7 +1,7 @@
-## MovieMate - Your Personal Movie & TV Show Tracker
+# MovieMate - Your Personal Movie & TV Show Tracker
 MovieMate is a simple web app designed to help you easily keep track of all the movies and TV shows you watch, want to watch, or have already finished. It's like your personal entertainment diary!
 
-# Features
+## Features
 MovieMate offers these cool features:
 
 Your Account:
@@ -45,7 +45,7 @@ Friendly Look: A welcoming screen that says "Welcome, [Your Name]!"
 Simple Navigation: Clear buttons to "Add Collection" and "Logout" centered in the bar.
 
 
-# Setup
+## Setup
 Want to run MovieMate on your own computer? Here's how to set it up:
 
 What You Need First:
