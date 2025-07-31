@@ -13,6 +13,7 @@ function MovieList({ movies, onDelete, onEdit }) {
             <li key={movie.id} className="movie-item">
               <div className="movie-details">
                 <h3>{movie.title} ({movie.content_type === 'movie' ? 'Movie' : 'TV Show'})</h3>
+                <p><strong>Director:</strong> {movie.director || ' '}</p>
                 <p><strong>Genre:</strong> {movie.genre}</p>
                 <p><strong>Platform:</strong> {movie.platform}</p>
                 <p><strong>Status:</strong> {movie.status}</p>
