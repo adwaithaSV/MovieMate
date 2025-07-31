@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signup, login } from '../services/api';
-import '../styles/Auth.css'; // Add Auth-specific styles
+import '../styles/Auth.css'; 
 
 function Auth({ type, onLogin }) {
   const [name, setName] = useState('');
@@ -26,7 +26,7 @@ function Auth({ type, onLogin }) {
       } else {
         setMessage(response.message || 'Signup failed');
       }
-    } else { // type === 'login'
+    } else { 
       const response = await login({ email, password });
       if (response.token) {
         onLogin(response.token, response.username);
