@@ -123,35 +123,3 @@ npm start
 
 Your MovieMate website will open automatically at http://localhost:3000.
 
-
-📁 Project Structure 
-moviemate/
-├── backend/
-│   ├── app.py              # Main Flask application file
-│   ├── models.py           # Database models (User, Movie)
-│   ├── routes.py           # API endpoints (Auth, Movie CRUD)
-│   ├── .flaskenv           # Flask environment variables
-│   ├── moviemate.db        # SQLite database file (generated)
-│   └── venv/               # Python virtual environment
-├── frontend/
-│   ├── public/             # Static assets (like index.html)
-│   ├── src/
-│   │   ├── App.js          # Root React component, handles routing
-│   │   ├── index.js        # React app entry point
-│   │   ├── components/     # Reusable React UI components
-│   │   │   ├── Auth.js         # User signup/login
-│   │   │   ├── MovieDashboard.js # Displays movie list
-│   │   │   ├── MovieForm.js    # Add/Edit movie form
-│   │   │   ├── MovieList.js    # Renders movie items
-│   │   │   └── NavBar.js       # Navigation bar
-│   │   ├── services/       # Connects to backend API
-│   │   │   └── api.js      # API call functions
-│   │   └── styles/         # CSS for components
-│   │       ├── App.css
-│   │       ├── Auth.css
-│   │       ├── MovieDashboard.css
-│   │       ├── MovieForm.css
-│   │       ├── MovieList.css
-│   │       └── NavBar.css
-│   ├── package.json        # Frontend dependencies
-└── README.md               # This documentation file
