@@ -1,4 +1,4 @@
-from app import app, db # Assuming app and db are initialized in app.py
+from app import app, db 
 from models import User, Movie
 from flask import request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -6,7 +6,7 @@ from functools import wraps
 import jwt
 import datetime
 
-# Secret key for JWT (use a strong, random key in production)
+# Secret key for JWT 
 app.config['SECRET_KEY'] = 'your_super_secret_key_for_jwt'
 
 # JWT decorator
@@ -71,6 +71,7 @@ def add_movie(current_user):
     data = request.get_json()
     new_movie = Movie(
         title=data.get('title'),
+        director=data.get('director'), 
         genre=data.get('genre'),
         platform=data.get('platform'),
         content_type=data.get('content_type'),
@@ -99,6 +100,7 @@ def update_movie(current_user, movie_id):
 
     data = request.get_json()
     movie.title = data.get('title', movie.title)
+    movie.director = data.get('director', movie.director) 
     movie.genre = data.get('genre', movie.genre)
     movie.platform = data.get('platform', movie.platform)
     movie.content_type = data.get('content_type', movie.content_type)
