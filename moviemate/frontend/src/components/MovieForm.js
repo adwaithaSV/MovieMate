@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'; // <--- ADD useCallback here
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { addMovie, updateMovie, getMovies } from '../services/api';
 import '../styles/MovieForm.css';
@@ -9,7 +9,7 @@ function MovieForm() {
 
   const [movieData, setMovieData] = useState({
     title: '',
-    director: '', // <--- ADD THIS LINE
+    director: '',
     genre: '',
     platform: 'Netflix',
     content_type: 'movie',
@@ -20,16 +20,27 @@ function MovieForm() {
   });
 
   const [isEditMode, setIsEditMode] = useState(false);
+  const [modalMessage, setModalMessage] = useState(null);
 
-  // Wrap fetchMovieToEdit with useCallback
-  const fetchMovieToEdit = useCallback(async (movieId) => { // <--- Wrap with useCallback
+  const handleShowModal = (msg) => {
+    setModalMessage(msg);
+  };
+
+  const handleCloseModal = () => {
+    setModalMessage(null);
+    if (modalMessage && (modalMessage.includes('successfully') || modalMessage.includes('Movie not found') || modalMessage.includes('Failed to load movie'))) {
+      navigate('/dashboard');
+    }
+  };
+
+  const fetchMovieToEdit = useCallback(async (movieId) => {
     try {
       const movies = await getMovies();
       const movieToEdit = movies.find(m => m.id === parseInt(movieId));
       if (movieToEdit) {
         setMovieData({
           title: movieToEdit.title || '',
-          director: movieToEdit.director || '', // <--- ADD THIS LINE
+          director: movieToEdit.director || '',
           genre: movieToEdit.genre || '',
           platform: movieToEdit.platform || 'Netflix',
           content_type: movieToEdit.content_type || 'movie',
@@ -39,22 +50,20 @@ function MovieForm() {
           comments: movieToEdit.comments || '',
         });
       } else {
-        alert('Movie not found for editing.');
-        navigate('/dashboard');
+        handleShowModal('Movie not found for editing.');
       }
     } catch (error) {
       console.error("Error fetching movie for edit:", error);
-      alert('Failed to load movie for editing. Please try again.');
-      navigate('/dashboard'); // Navigate back if there's an error
+      handleShowModal('Failed to load movie for editing. Please try again.'); 
     }
-  }, [getMovies, setMovieData, navigate]); // <--- Add its own dependencies here
+  }, [getMovies, setMovieData, handleShowModal]);
 
   useEffect(() => {
     if (id) {
       setIsEditMode(true);
       fetchMovieToEdit(id);
     }
-  }, [id, fetchMovieToEdit]); // <--- Add fetchMovieToEdit to useEffect dependencies
+  }, [id, fetchMovieToEdit]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -67,22 +76,21 @@ function MovieForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let response;
-    try { // <--- Add try-catch for API calls for better error handling
+    try {
       if (isEditMode) {
         response = await updateMovie(id, movieData);
       } else {
         response = await addMovie(movieData);
       }
 
-      if (response && response.message) { // Check if response exists and has message
-        alert(response.message);
-        navigate('/dashboard');
+      if (response && response.message) {
+        handleShowModal(response.message);
       } else {
-        alert('Operation failed or no message from server.');
+        handleShowModal('Operation failed or no message from server.');
       }
     } catch (error) {
       console.error("Error submitting movie form:", error);
-      alert('An error occurred during operation. Please check console for details.');
+      handleShowModal('An error occurred during operation. Please check console for details.'); 
     }
   };
 
@@ -103,7 +111,7 @@ function MovieForm() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="director">Director:</label> {/* <--- ADD THIS ENTIRE DIV */}
+          <label htmlFor="director">Director:</label>
           <input
             type="text"
             id="director"
@@ -136,7 +144,6 @@ function MovieForm() {
             <option value="Amazon Prime">Amazon Prime</option>
             <option value="Jio Hotstar">Jio Hotstar</option>
             <option value="Sonyliv">Sonyliv</option>
-            {/* Add more platforms if needed */}
           </select>
         </div>
 
@@ -225,6 +232,17 @@ function MovieForm() {
           Back to Dashboard
         </button>
       </form>
+
+      {modalMessage && (
+        <div className="movieform-modal-overlay">
+          <div className="movieform-modal-content">
+            <p className="movieform-modal-message">{modalMessage}</p>
+            <button className="movieform-modal-close-button" onClick={handleCloseModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
