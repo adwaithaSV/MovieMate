@@ -18,7 +18,7 @@ class Movie(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(200), nullable=False)
     genre = db.Column(db.String(100))
-    director = db.Column(db.String(100)) # <--- ADD THIS LINE
+    director = db.Column(db.String(100)) 
     platform = db.Column(db.String(100))
     content_type = db.Column(db.String(50)) # 'movie' or 'tv_show'
     episodes_watched = db.Column(db.Integer, default=0) # For TV shows
